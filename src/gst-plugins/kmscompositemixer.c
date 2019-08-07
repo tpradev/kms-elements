@@ -834,8 +834,8 @@ kms_composite_mixer_init (KmsCompositeMixer * self)
   self->priv->ports = g_hash_table_new_full (g_int_hash, g_int_equal,
       release_gint, kms_composite_mixer_port_data_destroy);
   //TODO:Obtain the dimensions of the bigger input stream
-  self->priv->output_height = 600;
-  self->priv->output_width = 800;
+  self->priv->output_height = 1080;
+  self->priv->output_width = 1920;
   self->priv->n_elems = 0;
 
   self->priv->loop = kms_loop_new ();
